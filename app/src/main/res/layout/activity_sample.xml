@@ -1,0 +1,153 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/live2dLayout"></FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.7" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:baselineAligned="false"
+                android:gravity="center"
+                android:layout_marginLeft="10dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/clockBack"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/clockback" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <jp.live2d.sample.ResizeTextClock
+                            android:id="@+id/dateText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:format24Hour="yyyy年MM月dd日(E)"
+                            android:gravity="center"
+                            android:textColor="#be88ff55"
+                            android:textIsSelectable="false"
+                            android:textSize="25sp"
+                            android:typeface="serif" />
+
+                        <jp.live2d.sample.ResizeTextClock
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/timeText"
+                            android:textSize="40sp"
+                            android:textColor="#be88ff55"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:typeface="serif"
+                            android:format24Hour="kk時mm分ss秒"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/subFab1"
+        android:layout_gravity="bottom|right"
+        android:alpha="0"
+        style="@style/FabMargin"
+        android:src="@android:drawable/ic_menu_recent_history"
+        android:focusableInTouchMode="false" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/subFab2"
+        android:layout_gravity="bottom|right"
+        android:alpha="0"
+        style="@style/FabMargin"
+        android:src="@android:drawable/ic_menu_today"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fabMain"
+        android:layout_gravity="bottom|right"
+        android:src="@android:drawable/ic_menu_upload"
+        style="@style/FabMargin"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/slidelistFab"
+        android:layout_gravity="left|bottom"
+        style="@style/FabMargin"
+        android:src="@android:drawable/ic_lock_silent_mode_off" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/micFab"
+        android:layout_gravity="right|top"
+        style="@style/FabMargin"
+        android:src="@android:drawable/ic_btn_speak_now" />
+
+    <FrameLayout
+        android:id="@+id/slideListLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</FrameLayout>

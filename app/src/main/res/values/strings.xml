@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">Haru</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_sample">Haru</string>
+    <string name="title_activity_detail">DetailActivity</string>
+
+</resources>

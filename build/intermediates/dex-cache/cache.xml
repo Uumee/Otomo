@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\OneDrive\app\simple\simple\app\lib\live2d_android.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1b5bdd8e355865900806c6a6efc5a52fe32fd2e3">
+        <dex dex="D:\OneDrive\app\simple\simple\app\build\intermediates\transforms\dex\debug\folders\1000\2\live2d_android_c63aba4286d35c5d34c316acf7f567b1d9d4b189\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\OneDrive\app\simple\simple\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="D:\OneDrive\app\simple\simple\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_f8b92613ca923c00e7eb94f12f6d1e22616f8490\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\OneDrive\app\simple\simple\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="00191ba04fe1d7f0462de5fb1b0b36fd03a98d3b">
+        <dex dex="D:\OneDrive\app\simple\simple\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_4b772260356769f76fa3615e9e6ba4214ed643bf\classes.dex" />
+    </item>
+
+</items>
